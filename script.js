@@ -77,4 +77,21 @@ function isYearValid () {
     } 
 }
 
+renderList(moviesInformation);
+
+function renderList (movieArray) {
+    let movieList = document.getElementById("movieList");
+    movieArray.forEach(function(value){
+        const movieListItem = document.createElement("li");
+        const movieList = document.getElementById("movieList")
+        const textNode = document.createTextNode(value);
+
+        movieListItem.appendChild(textNode);
+        movieList.appendChild(movieListItem);
+    });
+}
+
+function btnShowMovie (){
+    renderList(moviesInformation);
+}
 
