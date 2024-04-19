@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+}
+
+input {
+    margin: 5px;
+    display: block;
+    flex-direction: column;
+}
+
+label {
+    margin:0 auto;
+    margin: 5px;
+    display: block;
+    flex-direction: column;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+button {
+    margin: 5px;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: black;
+
+}

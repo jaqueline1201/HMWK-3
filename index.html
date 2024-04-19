@@ -3,16 +3,23 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width"
-        <title>Movie List</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cookie&display=swap" rel="stylesheet">
+        <title>Movie List</title> 
     </head>
     <body>
         <h1>Movies</h1>
         <div id="wrapper">
             <div id="inputSection">
-
+                <label for="movieTitle" class="labelText">Movie's Title:</label><input type="text">
+                <label for="movieRaiting"class="labelText">Movie's Raiting:</label><input type="text">
+                <label for="movieRealease" class="labelText">Movie's Release Year:</label><input type="text">
+                <button>Add Movie</button>
             </div>
             <div id="moviesInfo">
+                <button>Show Movies</button>
                 <ul id="movieList"></ul>
             </div>
         </div>
