@@ -75,3 +75,11 @@ li {
     font-style: normal;
     font-size: 20px;
 }
+
+#moviesInfo {
+    margin:0 auto;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+}

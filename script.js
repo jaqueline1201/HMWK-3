@@ -29,10 +29,13 @@ function addMovie () {
         const movieRate = document.getElementById("movieRate").value;
         const movieYear = document.getElementById("realeaseYear").value;
         const newMovie = new Movie(movieTitle,movieRate,movieYear);
-        console.log(newMovie)
         moviesInformation.push(newMovie);
-        console.log(moviesInformation);
+
+        document.getElementById("movieTitle").value = "";
+        document.getElementById("movieRate").value = "";
+        document.getElementById("realeaseYear").value = "";
     }
+    
     return false;
 }
 
@@ -81,17 +84,23 @@ renderList(moviesInformation);
 
 function renderList (movieArray) {
     let movieList = document.getElementById("movieList");
-    movieArray.forEach(function(value){
+    movieArray.forEach(function(movieInfo){
         const movieListItem = document.createElement("li");
         const movieList = document.getElementById("movieList")
-        const textNode = document.createTextNode(value);
-
+        const textNode = document.createTextNode(`Movie: ${movieInfo.title} Rate: ${movieInfo.rate} Year: ${movieInfo.year}`);
+        
         movieListItem.appendChild(textNode);
         movieList.appendChild(movieListItem);
     });
 }
 
+function cleanList () {
+    let movieList = document.getElementById("movieList");
+    movieList.innerHTML = "";
+}
+
 function btnShowMovie (){
+    cleanList(moviesInformation);
     renderList(moviesInformation);
 }
 

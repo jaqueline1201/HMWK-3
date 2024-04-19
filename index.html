@@ -13,7 +13,7 @@
         <h1>Movies</h1>
         <div id="wrapper">
             <div id="inputSection">
-                <form action="" onsubmit="return addMovie()">
+                <form id="movieForm" action="" onsubmit="return addMovie()">
                     <label for="movieTitle" class="labelText">Movie's Title:</label>
                     <input type="text" id="movieTitle">
                     <span id="movieTitleError" class="errorMessage"></span>
@@ -24,7 +24,7 @@
                     <input type="text" id="realeaseYear">
                     <span id="movieRealeaseError" class="errorMessage"></span>
                     <button type="submit">Add Movie</button>
-                    <button onclick="btnShowMovie()">Show Movies</button>
+                    <button type="button" onclick="btnShowMovie()">Show Movies</button>
                 </form>
             </div>
             <div id="moviesInfo">
