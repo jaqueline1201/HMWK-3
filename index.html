@@ -13,15 +13,25 @@
         <h1>Movies</h1>
         <div id="wrapper">
             <div id="inputSection">
-                <label for="movieTitle" class="labelText">Movie's Title:</label><input type="text">
-                <label for="movieRaiting"class="labelText">Movie's Raiting:</label><input type="text">
-                <label for="movieRealease" class="labelText">Movie's Release Year:</label><input type="text">
-                <button>Add Movie</button>
+                <form action="" onsubmit="return addMovie()">
+                    <label for="movieTitle" class="labelText">Movie's Title:</label>
+                    <input type="text" id="movieTitle">
+                    <span id="movieTitleError" class="errorMessage"></span>
+                    <label for="movieRaiting"class="labelText">Movie's Raiting:</label>
+                    <input type="text" id="movieRate">
+                    <span id="movieRaitingError" class="errorMessage"></span>
+                    <label for="movieRealease" class="labelText">Movie's Release Year:</label>
+                    <input type="text" id="realeaseYear">
+                    <span id="movieRealeaseError" class="errorMessage"></span>
+                    <button type="submit">Add Movie</button>
+                    <button>Show Movies</button>
+                </form>
             </div>
             <div id="moviesInfo">
-                <button>Show Movies</button>
+                
                 <ul id="movieList"></ul>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
