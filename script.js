@@ -61,7 +61,7 @@ function isRateValid () {
     }
 
     let rateNumbers = (/^[1-5]+$/);
-    if(!rateNumbers.test(movieRate) || movieRate >=5 ) {
+    if(!rateNumbers.test(movieRate) || movieRate >= 6 ) {
         document.getElementById("movieRaitingError").innerHTML = "This section accept just numbers; with 5 being a good movie and 1 a bad movie";
     } else {
         document.getElementById("movieRaitingError").innerHTML = ""
